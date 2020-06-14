@@ -6,7 +6,8 @@ import os
 import requests
 from datetime import datetime
 
-URL = 'https://localhost/admin'
+URL = "https://localhost/admin"
+#URL = "https://loven4ever.com/admin"
 ERROR_STATUS_CODE = 204
 COMMAND_ON_ERROR = "sudo service apache2 restart"
 
@@ -18,5 +19,5 @@ def main():
             myfile.write(datetime.now().__str__() + " Fixed \n")
             os.system(COMMAND_ON_ERROR)
 
-if __name__ == __name__:
+if __name__ == "__main__":
     main()
